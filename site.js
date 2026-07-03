@@ -111,7 +111,7 @@ const faculty = [
   {
     name: "Amy Gall",
     role: "Assistant Professor",
-    summary: "Applies spectroscopy of highly charged ions to heliophysics and astrophysics.",
+    summary: "Leads Auburn's EBIT program, applying spectroscopy of highly charged ions to heliophysics and astrophysics.",
     photo: "assets/people/amy-gall.jpg",
     urls: {
       auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/gall/index.htm",
