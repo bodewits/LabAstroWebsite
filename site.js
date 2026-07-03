@@ -108,10 +108,11 @@ const faculty = [
   },
   {
     name: "Amy Gall",
-    role: "Researcher",
+    role: "Assistant Professor",
     summary: "Leads EBIT and atomic physics work with applications for heliophysics and astrophysics.",
     photo: "assets/people/amy-gall.jpg",
     urls: {
+      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/gall/index.htm",
       orcid: "https://orcid.org/0000-0002-8260-2229"
     },
     links: ["auburn", "scholar", "orcid"]
