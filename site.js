@@ -117,10 +117,11 @@ const faculty = [
   },
   {
     name: "Dennis Bodewits",
-    role: "Faculty / PI",
+    role: "Auburn University Endowed Alumni Professor",
     summary: "Studies comets and small bodies with observations and laboratory-informed models of gas, dust, chemistry, and volatile activity.",
     photo: "assets/people/dennis-bodewits.jpg",
     urls: {
+      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/bodewits/index.htm",
       orcid: "https://orcid.org/0000-0002-2668-7248"
     },
     links: ["auburn", "scholar", "orcid"]
