@@ -129,10 +129,11 @@ const faculty = [
   },
   {
     name: "John Noonan",
-    role: "Faculty / PI",
+    role: "Assistant Research Professor",
     summary: "Works on cometary activity, small-body observations, and JWST and HST spectroscopy, connecting telescope data with physical models.",
     photo: "assets/people/john-noonan.jpg",
     urls: {
+      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/noonan/index.htm",
       orcid: "https://orcid.org/0000-0003-2152-6987"
     },
     links: ["auburn", "scholar", "orcid"]
