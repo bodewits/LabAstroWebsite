@@ -138,11 +138,12 @@ const faculty = [
     links: ["auburn", "scholar", "orcid"]
   },
   {
-    name: "Steve Bromley",
-    role: "Faculty / PI",
+    name: "Steven Bromley",
+    role: "Principal Research Scientist",
     summary: "Develops spectroscopic calculations and atomic-data projects for neutron-star mergers and laboratory astrophysics.",
     photo: "assets/people/steve-bromley.jpg",
     urls: {
+      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/bromley/index.htm",
       orcid: "https://orcid.org/0000-0003-2110-8152"
     },
     links: ["auburn", "scholar", "orcid"]
