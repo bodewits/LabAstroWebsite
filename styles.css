@@ -438,8 +438,7 @@ nav a {
 
 .person-photo {
   display: grid;
-  height: 220px;
-  min-height: 220px;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   place-items: center;
   color: var(--white);
