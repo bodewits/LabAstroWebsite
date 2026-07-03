@@ -487,6 +487,11 @@ nav a {
 }
 
 .profile-links a {
+  display: inline-flex;
+  min-width: 34px;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
   padding: 7px 9px;
   color: var(--navy);
   background: #edf2f6;
@@ -494,6 +499,12 @@ nav a {
   text-decoration: none;
   font-size: 0.78rem;
   font-weight: 900;
+}
+
+.profile-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 .profile-links a:focus-visible,

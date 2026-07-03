@@ -233,11 +233,16 @@ const initials = (name) =>
     .toUpperCase();
 
 const personTemplate = (person) => {
-  const linkLabels = { auburn: "Auburn", scholar: "Scholar", orcid: "ORCID" };
+  const linkLabels = { auburn: "Auburn", scholar: "Google Scholar", orcid: "ORCID" };
+  const linkContent = {
+    auburn: "Auburn",
+    scholar: `<svg class="profile-icon google-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#4285f4" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.2 3-7.3Z"/><path fill="#34a853" d="M12 22c2.7 0 5-0.9 6.6-2.5L15.4 17c-.9.6-2 .9-3.4.9a5.9 5.9 0 0 1-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22Z"/><path fill="#fbbc05" d="M6.4 13.8a6 6 0 0 1 0-3.6V7.6H3.1a10 10 0 0 0 0 8.8l3.3-2.6Z"/><path fill="#ea4335" d="M12 6.1c1.5 0 2.8.5 3.8 1.5l2.8-2.8A9.5 9.5 0 0 0 12 2a10 10 0 0 0-8.9 5.6l3.3 2.6A5.9 5.9 0 0 1 12 6.1Z"/></svg>`,
+    orcid: `<svg class="profile-icon orcid-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="11" fill="#a6ce39"/><path fill="#fff" d="M7.4 8.8h1.7v8H7.4v-8Zm.8-3.6a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm3.4 3.6h3.1c2.9 0 4.5 1.7 4.5 4s-1.6 4-4.5 4h-3.1v-8Zm1.7 1.5v5h1.3c2 0 2.9-1 2.9-2.5s-.9-2.5-2.9-2.5h-1.3Z"/></svg>`
+  };
   const links = person.links
     .map((type) => {
       const label = linkLabels[type];
-      return `<a href="${profileUrl(person, type)}" rel="noreferrer" aria-label="${person.name} ${label} profile">${label}</a>`;
+      return `<a href="${profileUrl(person, type)}" rel="noreferrer" aria-label="${person.name} ${label} profile" title="${label}">${linkContent[type]}</a>`;
     })
     .join("");
 
