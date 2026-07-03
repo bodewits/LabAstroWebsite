@@ -160,6 +160,7 @@ const faculty = [
     summary: "Studies volatile activity in comets and interstellar objects through UV/optical observations and production-rate modeling.",
     photo: "assets/people/zexi-xing.jpg",
     urls: {
+      scholar: "https://scholar.google.com/citations?user=4dI-4XYAAAAJ&hl=en",
       orcid: "https://orcid.org/0000-0003-2399-5613"
     },
     links: ["auburn", "scholar", "orcid"]
