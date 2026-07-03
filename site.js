@@ -156,7 +156,7 @@ const faculty = [
   },
   {
     name: "Zexi Xing",
-    role: "Postdoc / Researcher",
+    role: "Postdoctoral researcher",
     summary: "Studies volatile activity in comets and interstellar objects through UV/optical observations and production-rate modeling.",
     photo: "assets/people/zexi-xing-20260703.jpg",
     urls: {
