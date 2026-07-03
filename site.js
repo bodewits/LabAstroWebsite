@@ -146,7 +146,7 @@ const faculty = [
   {
     name: "Steven Bromley",
     role: "Principal Research Scientist",
-    summary: "Develops spectroscopic calculations and atomic-data projects for neutron-star mergers and laboratory astrophysics.",
+    summary: "Develops spectroscopic calculations and atomic-data projects for neutron-star mergers and cometary comae.",
     photo: "assets/people/steve-bromley.jpg",
     urls: {
       auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/bromley/index.htm",
