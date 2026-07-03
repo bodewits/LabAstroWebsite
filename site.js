@@ -232,7 +232,7 @@ const initials = (name) =>
     .join("")
     .toUpperCase();
 
-const personTemplate = (person) => {
+const personTemplate = (person, className = "person-card") => {
   const linkLabels = { auburn: "Auburn", scholar: "Google Scholar", orcid: "ORCID" };
   const linkContent = {
     auburn: "Auburn",
@@ -251,7 +251,7 @@ const personTemplate = (person) => {
     : `<span>${initials(person.name)}</span>`;
 
   return `
-    <article class="person-card">
+    <article class="${className}">
       <div class="person-photo">${photo}</div>
       <div class="person-body">
         <h4>${person.name}</h4>
@@ -279,7 +279,7 @@ renderCards(facilities, "facility-list", "facility-card", (item, className) => `
 `);
 
 renderCards(faculty, "faculty-grid", "person-card", personTemplate);
-renderCards(students, "student-grid", "person-card", personTemplate);
+renderCards(students, "student-grid", "person-card student-card", personTemplate);
 
 renderCards(collaborations, "collaboration-grid", "collaboration-card", (item, className) => `
   <article class="${className}">

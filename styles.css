@@ -455,8 +455,17 @@ nav a {
   object-fit: cover;
 }
 
+.student-card .person-photo {
+  aspect-ratio: 4 / 1;
+  font-size: 1.25rem;
+}
+
 .person-body {
   padding: 18px;
+}
+
+.student-card .person-body {
+  padding: 14px 16px 16px;
 }
 
 .person-body h4 {
