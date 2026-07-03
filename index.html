@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auburn Laboratory Astrophysics</title>
+    <meta
+      name="description"
+      content="Auburn Laboratory Astrophysics connects laboratory measurements, atomic and molecular data, and astronomical observations."
+    >
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20260703d">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="#main-content" aria-label="Auburn Laboratory Astrophysics home">
+        <span class="brand-mark">ALA</span>
+        <span>
+          <strong>Auburn Lab Astro</strong>
+          <small>labastro.auburn.edu</small>
+        </span>
+      </a>
+      <nav aria-label="Sections">
+        <a href="#scope">Scope</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#people">People</a>
+        <a href="#publications">Papers</a>
+        <a href="#collaborations">Collaborations</a>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <img id="hero-image" src="assets/lab-astro-hero.png" alt="" aria-hidden="true">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Auburn University</p>
+          <h1 id="hero-title">Laboratory Astrophysics</h1>
+          <p>
+            Experimental, theoretical, and observational AMO research for astrophysics, astrochemistry, planetary
+            science, heliophysics, and laboratory plasmas.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#people">Meet the group</a>
+            <a class="button" href="#facilities">View facilities</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="scope" class="section scope-section">
+        <div class="section-heading">
+          <p class="eyebrow">Research Scope</p>
+          <h2>Laboratory measurements and models that make astronomical spectra interpretable.</h2>
+        </div>
+        <div class="scope-grid" id="scope-grid"></div>
+      </section>
+
+      <section id="facilities" class="section band">
+        <div class="section-heading">
+          <p class="eyebrow">Facilities</p>
+          <h2>Flexible infrastructure for collision physics, spectroscopy, and data interpretation.</h2>
+        </div>
+        <div class="facility-layout">
+          <div class="facility-list" id="facility-list"></div>
+          <aside class="maintenance-note">
+            <h3>Low-maintenance content model</h3>
+            <p>
+              The site avoids news feeds and dated announcements. Update the people list, facility labels, and external
+              profile links in one data block when group membership changes.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="people" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">People</p>
+          <h2>Group members</h2>
+        </div>
+
+        <div class="people-panel">
+          <div class="people-intro">
+          <h3>Faculty, PIs, postdocs, and researchers</h3>
+          <p>
+              Each summary stays short by design. External links route visitors to maintained Auburn, Google Scholar,
+              and ORCID records instead of duplicating CV content here.
+          </p>
+          </div>
+          <div class="people-grid" id="faculty-grid"></div>
+        </div>
+
+        <div class="people-panel students">
+          <div class="people-intro">
+            <h3>Graduate students</h3>
+            <p>
+              Student cards are intentionally brief: name, project area, and durable external profile links when
+              available. Add or remove names in one data list as the group changes.
+            </p>
+          </div>
+          <div class="people-grid compact" id="student-grid"></div>
+        </div>
+      </section>
+
+      <section id="collaborations" class="section band">
+        <div class="section-heading">
+          <p class="eyebrow">Collaborations</p>
+          <h2>Built for shared problems across laboratory, observational, and mission science.</h2>
+        </div>
+        <div class="collaboration-grid" id="collaboration-grid"></div>
+      </section>
+
+      <section id="publications" class="section publications-section">
+        <div class="section-heading">
+          <p class="eyebrow">Recent Papers</p>
+          <h2 class="visually-hidden">Recent papers and research terms</h2>
+          <div class="word-cloud heading-word-cloud" id="word-cloud-terms" aria-label="Word cloud from the group's recent papers">
+            <span class="word-cloud-empty">Loading research terms...</span>
+          </div>
+        </div>
+        <div class="publications-layout">
+          <ol class="paper-list" id="paper-list" aria-live="polite">
+            <li class="paper-card loading">Loading recent papers...</li>
+          </ol>
+          <aside class="maintenance-note">
+            <h3>How this stays current</h3>
+            <p>
+              A scheduled script searches ADS for group members, writes 10 recent papers with PI coverage to local data
+              files, and the static page renders those files.
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Auburn Laboratory Astrophysics</p>
+      <p>
+        <a href="https://www.auburn.edu/" rel="noreferrer">Auburn University</a>
+        <span aria-hidden="true">/</span>
+        <a href="https://scholar.google.com/scholar?q=Auburn+laboratory+astrophysics" rel="noreferrer">Google Scholar</a>
+      </p>
+    </footer>
+
+    <script src="data/papers.js?v=20260703"></script>
+    <script src="site.js?v=20260703d"></script>
+  </body>
+</html>
