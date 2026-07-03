@@ -152,7 +152,7 @@ const faculty = [
       auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/bromley/index.htm",
       orcid: "https://orcid.org/0000-0003-2110-8152"
     },
-    links: ["auburn", "scholar", "orcid"]
+    links: ["auburn", "orcid"]
   },
   {
     name: "Zexi Xing",
