@@ -96,8 +96,8 @@ const faculty = [
     links: ["auburn", "scholar", "orcid"]
   },
   {
-    name: "Stuart Loch",
-    role: "Faculty / PI",
+    name: "Dr. Stuart Loch",
+    role: "Dr. William L. Alford Endowed Professor",
     summary: "Develops atomic data, theory, and spectral diagnostics for astrophysical plasmas, laboratory plasmas, and neutron-star merger problems.",
     photo: "assets/people/stuart-loch.jpg",
     urls: {
