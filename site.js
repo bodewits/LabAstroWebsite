@@ -85,11 +85,12 @@ const facilities = [
 
 const faculty = [
   {
-    name: "Mike Fogle",
-    role: "Faculty / PI",
+    name: "Michael Fogle Jr.",
+    role: "Andrew T Hunt Endowed Professor",
     summary: "Leads experimental AMO measurements, including charge exchange and recombination studies that support comet and low-density astrophysics.",
     photo: "assets/people/mike-fogle.jpg",
     urls: {
+      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/fogle/index.htm",
       orcid: "https://orcid.org/0000-0003-3511-262X"
     },
     links: ["auburn", "scholar", "orcid"]
