@@ -91,6 +91,7 @@ const faculty = [
     photo: "assets/people/mike-fogle.jpg",
     urls: {
       auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/fogle/index.htm",
+      scholar: "https://scholar.google.com/citations?user=D0GGP3QAAAAJ&hl=en",
       orcid: "https://orcid.org/0000-0003-3511-262X"
     },
     links: ["auburn", "scholar", "orcid"]
@@ -102,6 +103,7 @@ const faculty = [
     photo: "assets/people/stuart-loch.jpg",
     urls: {
       auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/loch/index.htm",
+      scholar: "https://scholar.google.com/citations?user=-Bj_9ZsAAAAJ&hl=en",
       orcid: "https://orcid.org/0000-0002-3822-6756"
     },
     links: ["auburn", "scholar", "orcid"]
@@ -113,6 +115,7 @@ const faculty = [
     photo: "assets/people/amy-gall.jpg",
     urls: {
       auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/gall/index.htm",
+      scholar: "https://scholar.google.com/citations?user=KJmLiO0AAAAJ&hl=en",
       orcid: "https://orcid.org/0000-0002-8260-2229"
     },
     links: ["auburn", "scholar", "orcid"]
@@ -124,6 +127,7 @@ const faculty = [
     photo: "assets/people/dennis-bodewits.jpg",
     urls: {
       auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/bodewits/index.htm",
+      scholar: "https://scholar.google.com/citations?user=u1nZPlsAAAAJ&hl=nl",
       orcid: "https://orcid.org/0000-0002-2668-7248"
     },
     links: ["auburn", "scholar", "orcid"]
