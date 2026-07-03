@@ -101,6 +101,7 @@ const faculty = [
     summary: "Develops atomic data, theory, and spectral diagnostics for astrophysical plasmas, laboratory plasmas, and neutron-star merger problems.",
     photo: "assets/people/stuart-loch.jpg",
     urls: {
+      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/loch/index.htm",
       orcid: "https://orcid.org/0000-0002-3822-6756"
     },
     links: ["auburn", "scholar", "orcid"]
