@@ -57,19 +57,23 @@ const scopeItems = [
   {
     title: "Neutron-star mergers and plasmas",
     text: "Atomic data and spectroscopy for heavy-element emission, fusion diagnostics, and other application-driven plasma problems."
+  },
+  {
+    title: "Cross-disciplinary training",
+    text: "Train students across experiment, theory, supercomputing, spectroscopy, data analysis, writing, and conference presentation."
   }
 ];
 
 const facilities = [
   {
-    tag: "Beamlines",
-    title: "Ion, electron, and neutral collision platforms",
-    text: "Auburn-based experiments for charge exchange, recombination, cross sections, product channels, and state-resolved measurements."
+    tag: "Facilities",
+    title: "Electron Beam Ion Trap",
+    text: "Creates highly charged ions found in astrophysical plasmas in a controlled laboratory setting."
   },
   {
-    tag: "Partner facilities",
+    tag: "Partner facilities and collaborations",
     title: "Large experimental and observational facilities",
-    text: "Projects connect students and collaborators with facilities such as NIST, Clemson, national labs, observatories, and mission archives."
+    text: "Projects connect students and collaborators with facilities such as NIST, Clemson, the Laboratory of Electron Induced Fluorescence at Comenius University Bratislava, and the quantum chemistry group at Ole Miss."
   },
   {
     tag: "Spectroscopy",
@@ -79,7 +83,7 @@ const facilities = [
   {
     tag: "Computation",
     title: "Modeling, supercomputing, and data comparison",
-    text: "Large-scale quantum calculations, synthetic spectra, and analysis workflows for laboratory and astrophysical datasets."
+    text: "Large-scale quantum calculations, synthetic spectra, and diagnostic developments for laboratory and astrophysical datasets."
   }
 ];
 
@@ -236,10 +240,6 @@ const collaborations = [
   {
     title: "Small-body science",
     text: "Collaborate on cometary composition, activity, and interstellar-object studies where laboratory data sharpen interpretation."
-  },
-  {
-    title: "Cross-disciplinary training",
-    text: "Train students across experiment, theory, supercomputing, spectroscopy, data analysis, writing, and conference presentation."
   }
 ];
 

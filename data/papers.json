@@ -1,8 +1,549 @@
 {
-  "updated": "2026-08-03T12:35:03.664Z",
+  "updated": "2026-08-07T15:26:48.698Z",
   "source": "NASA ADS",
   "query": "(author:\"Fogle, M\" OR author:\"Loch, S\" OR author:\"Gall, A\" OR author:\"Bodewits, D\" OR author:\"Noonan, J\" OR author:\"Bromley, S\" OR author:\"Xing, Z\" OR author:\"Oset, S\") AND (aff:\"Auburn\" OR full:\"Auburn\")",
-  "note": "Set ADS_API_TOKEN to refresh recent papers.",
-  "papers": [],
-  "wordCloud": []
+  "paperLimit": 10,
+  "wordCloudPaperLimit": 100,
+  "piCoverage": [
+    "Mike Fogle",
+    "Stuart Loch",
+    "Dennis Bodewits"
+  ],
+  "papers": [
+    {
+      "title": "Bayesian modeling of NICER cometary X-ray spectra: A legacy survey of solar-wind charge exchange",
+      "authors": [
+        "Deskins, Thomas K.",
+        "Bodewits, Dennis",
+        "Bromley, Steven",
+        "Dennerl, Konrad",
+        "Christian, Damian J.",
+        "Odstrčil, Dušan"
+      ],
+      "venue": "Icarus",
+      "pubdate": "2026-11-00",
+      "year": "2026",
+      "bibcode": "2026Icar..45817160D",
+      "doi": "10.1016/j.icarus.2026.117160",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026Icar..45817160D/abstract"
+    },
+    {
+      "title": "AtomSpect: A Python package for spectroscopic diagnostic via synthetic spectra ─ Including lineshape effects from external magnetic fields and hyperfine structure",
+      "authors": [
+        "Nofs, L.",
+        "Loch, S. D."
+      ],
+      "venue": "Journal of Quantitative Spectroscopy and Radiative Transfer",
+      "pubdate": "2026-10-00",
+      "year": "2026",
+      "bibcode": "2026JQSRT.36210015N",
+      "doi": "10.1016/j.jqsrt.2026.110015",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026JQSRT.36210015N/abstract"
+    },
+    {
+      "title": "A generalized darc RMPS approach for the electron-impact ionization and excitation of C i from ground and excited states",
+      "authors": [
+        "Dougan, David J.",
+        "Ballance, Connor P.",
+        "Ramsbottom, Catherine A.",
+        "Loch, Stuart D."
+      ],
+      "venue": "Journal of Quantitative Spectroscopy and Radiative Transfer",
+      "pubdate": "2026-09-00",
+      "year": "2026",
+      "bibcode": "2026JQSRT.36009956D",
+      "doi": "10.1016/j.jqsrt.2026.109956",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026JQSRT.36009956D/abstract"
+    },
+    {
+      "title": "Sequential fragmentation of C/2025 K1 (ATLAS) after its near-sun passage",
+      "authors": [
+        "Bodewits, D.",
+        "Noonan, J. W.",
+        "Kelley, M. S. P.",
+        "Holt, C. E.",
+        "Lister, T. A.",
+        "Usher, H.",
+        "Snodgrass, C.",
+        "Davidsson, B. J. R.",
+        "Greenstreet, S."
+      ],
+      "venue": "Icarus",
+      "pubdate": "2026-07-00",
+      "year": "2026",
+      "bibcode": "2026Icar..45216996B",
+      "doi": "10.1016/j.icarus.2026.116996",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026Icar..45216996B/abstract"
+    },
+    {
+      "title": "High nitrogen and carbon isotopic ratios in the interstellar comet 3I/ATLAS",
+      "authors": [
+        "Opitom, C.",
+        "Manfroid, J.",
+        "Hutsemékers, D.",
+        "Jehin, E.",
+        "Knight, M. M.",
+        "Aravind, K.",
+        "Ferellec, L.",
+        "Bodewits, D.",
+        "Guzmán, V. V.",
+        "Cordiner, M.",
+        "Dorsey, R. C.",
+        "La Forgia, F.",
+        "Lippi, M.",
+        "Murphy, B. P.",
+        "Snodgrass, C.",
+        "Bannister, M."
+      ],
+      "venue": "Nature Astronomy",
+      "pubdate": "2026-07-00",
+      "year": "2026",
+      "bibcode": "2026NatAs.tmp..145O",
+      "doi": "10.1038/s41550-026-02921-7",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026NatAs.tmp..145O/abstract"
+    },
+    {
+      "title": "The role of time-dependent metastables in the modeling of low-temperature argon plasmas using newly calculated theoretical cross sections",
+      "authors": [
+        "Williamson, E. N.",
+        "Arnold, N. I.",
+        "Powell, J.",
+        "Thakur, S. C.",
+        "Thomas, E.",
+        "Loch, S. D."
+      ],
+      "venue": "Plasma Sources Science Technology",
+      "pubdate": "2026-07-00",
+      "year": "2026",
+      "bibcode": "2026PSST...35g5001W",
+      "doi": "10.1088/1361-6595/ae7cb1",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026PSST...35g5001W/abstract"
+    },
+    {
+      "title": "Rate coefficients for dielectronic recombination of N-like Ne",
+      "authors": [
+        "Hanu, E.-O.",
+        "Lestinsky, M.",
+        "Menz, E. B.",
+        "Looshorn, M.",
+        "Andelkovic, Z.",
+        "Biniskos, A.",
+        "Brandau, C.",
+        "Braeuning-Demian, A.",
+        "Fogle, M. R.",
+        "Geithner, W.",
+        "Herfurth, F.",
+        "Hillenbrand, P.-M.",
+        "Krantz, C.",
+        "Schuch, R.",
+        "Tatsch, M.",
+        "Vorobyev, G.",
+        "Wang, S.-X.",
+        "Stoehlker, T.",
+        "Schippers, S."
+      ],
+      "venue": "arXiv e-prints",
+      "pubdate": "2026-07-00",
+      "year": "2026",
+      "bibcode": "2026arXiv260713729H",
+      "doi": "10.48550/arXiv.2607.13729",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260713729H/abstract"
+    },
+    {
+      "title": "Calculating Low-Temperature Dielectronic Recombination Rates for Tellurium II-IV",
+      "authors": [
+        "Garbe, Evan",
+        "Ballance, Connor",
+        "Flint, Patrick",
+        "Ferguson, Niamh",
+        "Loch, Stuart",
+        "McElroy, Niall",
+        "Mulholland, Leo",
+        "O'Mullane, Martin",
+        "Stancil, Phillip"
+      ],
+      "venue": "American Astronomical Society Meeting Abstracts",
+      "pubdate": "2026-07-00",
+      "year": "2026",
+      "bibcode": "2026AAS...24811604G",
+      "doi": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026AAS...24811604G/abstract"
+    },
+    {
+      "title": "Isotopic evidence for a cold and distant origin of 3I/ATLAS",
+      "authors": [
+        "Cordiner, Martin",
+        "Roth, Nathan X.",
+        "Micheli, Marco",
+        "Villanueva, Geronimo",
+        "Farnocchia, Davide",
+        "Charnley, Steven",
+        "Biver, Nicolas",
+        "Bockelée-Morvan, Dominique",
+        "Bodewits, Dennis",
+        "Chandler, Colin Orion",
+        "Crovisier, Jacques",
+        "Drozdovskaya, Maria N.",
+        "Furuya, Kenji",
+        "Kelley, Michael S. P.",
+        "Milam, Stefanie",
+        "Noonan, John W.",
+        "Opitom, Cyrielle",
+        "Schwamb, Megan E.",
+        "Thomas, Cristina A."
+      ],
+      "venue": "Nature",
+      "pubdate": "2026-07-00",
+      "year": "2026",
+      "bibcode": "2026Natur.655..870C",
+      "doi": "10.1038/s41586-026-10771-6",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026Natur.655..870C/abstract"
+    },
+    {
+      "title": "High-mass binary black hole mergers from detailed binary evolution models",
+      "authors": [
+        "Briel, Max M.",
+        "Bıyıklı, Olcay",
+        "Fragos, Tassos",
+        "Ray, Anarya",
+        "Xing, Zepei",
+        "Gallegos-Garcia, Monica",
+        "Chattaraj, Abhishek",
+        "Andrews, Jeff J.",
+        "Zevin, Michael",
+        "Kalogera, Vicky",
+        "Gossage, Seth",
+        "Srivastava, Philipp M.",
+        "Teng, Elizabeth"
+      ],
+      "venue": "arXiv e-prints",
+      "pubdate": "2026-07-00",
+      "year": "2026",
+      "bibcode": "2026arXiv260727962B",
+      "doi": "10.48550/arXiv.2607.27962",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260727962B/abstract"
+    }
+  ],
+  "wordCloud": [
+    {
+      "term": "comet",
+      "count": 237,
+      "weight": 1
+    },
+    {
+      "term": "observation",
+      "count": 137,
+      "weight": 0.6059113300492611
+    },
+    {
+      "term": "object",
+      "count": 107,
+      "weight": 0.4876847290640394
+    },
+    {
+      "term": "solar",
+      "count": 99,
+      "weight": 0.4561576354679803
+    },
+    {
+      "term": "system",
+      "count": 91,
+      "weight": 0.4246305418719212
+    },
+    {
+      "term": "activity",
+      "count": 84,
+      "weight": 0.3970443349753695
+    },
+    {
+      "term": "rate",
+      "count": 82,
+      "weight": 0.3891625615763547
+    },
+    {
+      "term": "volatile",
+      "count": 82,
+      "weight": 0.3891625615763547
+    },
+    {
+      "term": "cometary",
+      "count": 80,
+      "weight": 0.3812807881773399
+    },
+    {
+      "term": "dust",
+      "count": 78,
+      "weight": 0.37339901477832516
+    },
+    {
+      "term": "coma",
+      "count": 74,
+      "weight": 0.3576354679802956
+    },
+    {
+      "term": "atlas",
+      "count": 72,
+      "weight": 0.3497536945812808
+    },
+    {
+      "term": "emission",
+      "count": 70,
+      "weight": 0.34187192118226606
+    },
+    {
+      "term": "jwst",
+      "count": 69,
+      "weight": 0.33793103448275863
+    },
+    {
+      "term": "measurement",
+      "count": 67,
+      "weight": 0.3300492610837439
+    },
+    {
+      "term": "water",
+      "count": 67,
+      "weight": 0.3300492610837439
+    },
+    {
+      "term": "electron",
+      "count": 66,
+      "weight": 0.32610837438423645
+    },
+    {
+      "term": "astrophysics",
+      "count": 64,
+      "weight": 0.3182266009852217
+    },
+    {
+      "term": "atomic",
+      "count": 63,
+      "weight": 0.3142857142857143
+    },
+    {
+      "term": "belt",
+      "count": 62,
+      "weight": 0.3103448275862069
+    },
+    {
+      "term": "plasma",
+      "count": 62,
+      "weight": 0.3103448275862069
+    },
+    {
+      "term": "model",
+      "count": 58,
+      "weight": 0.29458128078817736
+    },
+    {
+      "term": "high",
+      "count": 56,
+      "weight": 0.2866995073891626
+    },
+    {
+      "term": "outburst",
+      "count": 56,
+      "weight": 0.2866995073891626
+    },
+    {
+      "term": "production",
+      "count": 56,
+      "weight": 0.2866995073891626
+    },
+    {
+      "term": "interstellar",
+      "count": 55,
+      "weight": 0.2827586206896552
+    },
+    {
+      "term": "composition",
+      "count": 51,
+      "weight": 0.26699507389162563
+    },
+    {
+      "term": "earth",
+      "count": 51,
+      "weight": 0.26699507389162563
+    },
+    {
+      "term": "main",
+      "count": 51,
+      "weight": 0.26699507389162563
+    },
+    {
+      "term": "active",
+      "count": 50,
+      "weight": 0.26305418719211826
+    },
+    {
+      "term": "low",
+      "count": 50,
+      "weight": 0.26305418719211826
+    },
+    {
+      "term": "planetary",
+      "count": 50,
+      "weight": 0.26305418719211826
+    },
+    {
+      "term": "near",
+      "count": 49,
+      "weight": 0.25911330049261083
+    },
+    {
+      "term": "process",
+      "count": 49,
+      "weight": 0.25911330049261083
+    },
+    {
+      "term": "ice",
+      "count": 48,
+      "weight": 0.25517241379310346
+    },
+    {
+      "term": "ratio",
+      "count": 48,
+      "weight": 0.25517241379310346
+    },
+    {
+      "term": "spectral",
+      "count": 48,
+      "weight": 0.25517241379310346
+    },
+    {
+      "term": "evolution",
+      "count": 46,
+      "weight": 0.24729064039408868
+    },
+    {
+      "term": "ionization",
+      "count": 46,
+      "weight": 0.24729064039408868
+    },
+    {
+      "term": "state",
+      "count": 46,
+      "weight": 0.24729064039408868
+    },
+    {
+      "term": "study",
+      "count": 46,
+      "weight": 0.24729064039408868
+    },
+    {
+      "term": "large",
+      "count": 43,
+      "weight": 0.2354679802955665
+    },
+    {
+      "term": "star",
+      "count": 43,
+      "weight": 0.2354679802955665
+    },
+    {
+      "term": "mass",
+      "count": 41,
+      "weight": 0.22758620689655173
+    },
+    {
+      "term": "nucleu",
+      "count": 41,
+      "weight": 0.22758620689655173
+    },
+    {
+      "term": "asteroid",
+      "count": 40,
+      "weight": 0.22364532019704436
+    },
+    {
+      "term": "gas",
+      "count": 40,
+      "weight": 0.22364532019704436
+    },
+    {
+      "term": "result",
+      "count": 40,
+      "weight": 0.22364532019704436
+    },
+    {
+      "term": "telescope",
+      "count": 40,
+      "weight": 0.22364532019704436
+    },
+    {
+      "term": "temperature",
+      "count": 40,
+      "weight": 0.22364532019704436
+    },
+    {
+      "term": "other",
+      "count": 39,
+      "weight": 0.21970443349753696
+    },
+    {
+      "term": "centaur",
+      "count": 37,
+      "weight": 0.2118226600985222
+    },
+    {
+      "term": "energy",
+      "count": 37,
+      "weight": 0.2118226600985222
+    },
+    {
+      "term": "formation",
+      "count": 37,
+      "weight": 0.2118226600985222
+    },
+    {
+      "term": "ground",
+      "count": 37,
+      "weight": 0.2118226600985222
+    },
+    {
+      "term": "mission",
+      "count": 37,
+      "weight": 0.2118226600985222
+    },
+    {
+      "term": "perihelion",
+      "count": 37,
+      "weight": 0.2118226600985222
+    },
+    {
+      "term": "small",
+      "count": 36,
+      "weight": 0.20788177339901479
+    },
+    {
+      "term": "source",
+      "count": 36,
+      "weight": 0.20788177339901479
+    },
+    {
+      "term": "time",
+      "count": 36,
+      "weight": 0.20788177339901479
+    },
+    {
+      "term": "first",
+      "count": 35,
+      "weight": 0.2039408866995074
+    },
+    {
+      "term": "line",
+      "count": 35,
+      "weight": 0.2039408866995074
+    },
+    {
+      "term": "body",
+      "count": 34,
+      "weight": 0.2
+    },
+    {
+      "term": "distance",
+      "count": 34,
+      "weight": 0.2
+    }
+  ]
 }

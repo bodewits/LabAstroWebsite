@@ -271,6 +271,13 @@ nav a {
   font-size: 1.05rem;
 }
 
+.people-intro .section-scale-title {
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: 0;
+  margin: 0;
+}
+
 .scope-card p,
 .collaboration-card p,
 .facility-card p,
