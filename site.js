@@ -81,6 +81,11 @@ const facilities = [
     text: "Measurements and models designed to anchor spectra from observatories, spacecraft, EBIT experiments, and laboratory plasmas."
   },
   {
+    tag: "Observations",
+    title: "Space- and ground-based telescopes",
+    text: "Astrophysical observations using state-of-the-art facilities such as JWST, Hubble, Swift, and ground-based telescopes around the world."
+  },
+  {
     tag: "Computation",
     title: "Modeling, supercomputing, and data comparison",
     text: "Large-scale quantum calculations, synthetic spectra, and diagnostic developments for laboratory and astrophysical datasets."
