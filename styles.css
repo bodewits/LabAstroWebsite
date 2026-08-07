@@ -323,11 +323,16 @@ nav a {
 .heading-word-cloud {
   max-width: 1080px;
   min-height: 0;
-  margin-top: 10px;
-  padding: 0;
+  margin-top: 22px;
+  padding: 18px 0 0;
   background: transparent;
   border: 0;
   border-radius: 0;
+  border-top: 1px solid rgba(18, 40, 76, 0.14);
+}
+
+.publications-intro h2 {
+  margin-bottom: 0;
 }
 
 .word-cloud a,
