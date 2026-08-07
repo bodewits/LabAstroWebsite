@@ -219,12 +219,6 @@ const students = [
     role: "Graduate student",
     summary: "Works on laboratory astrophysics projects connected to atomic, molecular, optical, and observational research.",
     links: []
-  },
-  {
-    name: "Additional students",
-    role: "Graduate students",
-    summary: "Add new group members here as the roster changes; no page redesign is needed.",
-    links: []
   }
 ];
 
@@ -244,7 +238,9 @@ const collaborations = [
 ];
 
 const renderCards = (items, targetId, className, template) => {
-  document.getElementById(targetId).innerHTML = items.map((item) => template(item, className)).join("");
+  const target = document.getElementById(targetId);
+  if (!target) return;
+  target.innerHTML = items.map((item) => template(item, className)).join("");
 };
 
 const initials = (name) =>

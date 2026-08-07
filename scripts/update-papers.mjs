@@ -154,6 +154,7 @@ const stopWords = new Set(
     "data",
     "during",
     "each",
+    "first",
     "from",
     "had",
     "has",
@@ -162,9 +163,11 @@ const stopWords = new Set(
     "here",
     "into",
     "its",
+    "main",
     "may",
     "more",
     "most",
+    "near",
     "new",
     "not",
     "observed",
@@ -175,10 +178,12 @@ const stopWords = new Set(
     "papers",
     "present",
     "provide",
+    "ratio",
     "results",
     "show",
     "shown",
     "shows",
+    "small",
     "such",
     "than",
     "that",
@@ -246,31 +251,49 @@ const tokenize = (text) =>
     .filter((term) => term.length > 2 && !/^\d+$/.test(term) && !stopWords.has(term));
 
 const buildWordCloud = (papers) => {
-  const counts = new Map();
+  const scoredTerms = new Map();
+  const paperCountsByMember = new Map(groupMembers.map((member) => [member.name, 0]));
+  const candidatePapers = papers.slice(0, wordCloudPaperLimit);
 
-  for (const paper of papers.slice(0, wordCloudPaperLimit)) {
-    const text = [paper.title, paper.abstract, ...(paper.keywords || [])].filter(Boolean).join(" ");
+  const matchingMembersForPaper = (paper) => groupMembers.filter((member) => includesAuthor(paper, member));
 
-    for (const term of tokenize(text)) {
-      counts.set(term, (counts.get(term) || 0) + 1);
+  for (const paper of candidatePapers) {
+    for (const member of matchingMembersForPaper(paper)) {
+      paperCountsByMember.set(member.name, (paperCountsByMember.get(member.name) || 0) + 1);
     }
   }
 
-  const terms = [...counts.entries()]
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+  for (const paper of candidatePapers) {
+    const text = [paper.title, paper.abstract, ...(paper.keywords || [])].filter(Boolean).join(" ");
+    const uniqueTerms = new Set(tokenize(text));
+    const matchingMembers = matchingMembersForPaper(paper);
+    const paperWeight =
+      matchingMembers.reduce((sum, member) => sum + 1 / Math.max(1, paperCountsByMember.get(member.name) || 1), 0) ||
+      1;
+
+    for (const term of uniqueTerms) {
+      const entry = scoredTerms.get(term) || { score: 0, papers: 0 };
+      entry.score += paperWeight;
+      entry.papers += 1;
+      scoredTerms.set(term, entry);
+    }
+  }
+
+  const terms = [...scoredTerms.entries()]
+    .sort((a, b) => b[1].score - a[1].score || b[1].papers - a[1].papers || a[0].localeCompare(b[0]))
     .slice(0, 64);
 
   if (!terms.length) return [];
 
-  const countsOnly = terms.map(([, count]) => count);
-  const min = Math.min(...countsOnly);
-  const max = Math.max(...countsOnly);
+  const scoresOnly = terms.map(([, entry]) => entry.score);
+  const min = Math.min(...scoresOnly);
+  const max = Math.max(...scoresOnly);
   const span = Math.max(1, max - min);
 
-  return terms.map(([term, count]) => ({
+  return terms.map(([term, entry]) => ({
     term,
-    count,
-    weight: 0.2 + ((count - min) / span) * 0.8
+    count: entry.papers,
+    weight: 0.2 + ((entry.score - min) / span) * 0.8
   }));
 };
 
