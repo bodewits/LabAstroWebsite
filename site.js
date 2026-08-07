@@ -44,11 +44,11 @@ const heroSlides = [
 const scopeItems = [
   {
     title: "Atomic and molecular data",
-    text: "Benchmark experiments and calculations for ionization, recombination, excitation, and molecular processes in space environments."
+    text: "Benchmark experiments and calculations for ionization, recombination, excitation, and molecular processes in a wide range of astrophysical environments."
   },
   {
-    title: "Charge exchange and collisions",
-    text: "Particle interactions that shape X-ray, UV, optical, and plasma diagnostics in comets, planets, and low-density astrophysical objects."
+    title: "Collisional processes and diagnostics",
+    text: "Studies charge exchange, dielectronic recombination, and other interactions that help interpret X-ray, UV, optical, and plasma signals from a wide range of astrophysical environments."
   },
   {
     title: "Comets, planets, and small bodies",
@@ -172,25 +172,49 @@ const students = [
     name: "Shawn Oset",
     role: "Graduate student",
     summary: "Works on comet and small-body projects connected to observation-driven laboratory astrophysics questions.",
-    links: ["auburn", "scholar", "orcid"]
+    links: []
   },
   {
-    name: "Patrick Flint",
+    name: "Patrikc Flint",
     role: "Graduate student",
-    summary: "Works in physics education research and atomic, molecular, and optical research with Stuart Loch.",
-    links: ["auburn", "scholar", "orcid"]
+    summary: "Works in physics education research and on atomic data for neutron star mergers with Dr. Stuart Loch.",
+    links: []
+  },
+  {
+    name: "Jacob Freeze",
+    role: "Graduate student",
+    summary: "Works with Dr. Gall on EUV/X-ray spectroscopy using the EBIT.",
+    links: []
+  },
+  {
+    name: "Karin Farajnejadi",
+    role: "Graduate student",
+    summary: "Works with Dr. Gall on EUV/X-ray spectroscopy using the EBIT.",
+    links: []
+  },
+  {
+    name: "Winston Solsrud",
+    role: "Graduate student",
+    summary: "Works with Dr. Loch and Dr. David Ennis on atomic spectroscopy for fusion energy applications.",
+    links: []
+  },
+  {
+    name: "Borna Hlousek",
+    role: "Graduate student",
+    summary: "Works with Dr. Gall on EUV/X-ray spectroscopy using the EBIT.",
+    links: []
   },
   {
     name: "Clayton Chilen",
     role: "Graduate student",
     summary: "Works on laboratory astrophysics projects connected to atomic, molecular, optical, and observational research.",
-    links: ["auburn", "scholar", "orcid"]
+    links: []
   },
   {
     name: "Brandon Martin",
     role: "Graduate student",
     summary: "Works on laboratory astrophysics projects connected to atomic, molecular, optical, and observational research.",
-    links: ["auburn", "scholar", "orcid"]
+    links: []
   },
   {
     name: "Additional students",
