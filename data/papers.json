@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T15:41:29.129Z",
+  "updated": "2026-08-07T16:02:20.463Z",
   "source": "NASA ADS",
   "query": "(author:\"Fogle, M\" OR author:\"Loch, S\" OR author:\"Gall, A\" OR author:\"Bodewits, D\" OR author:\"Noonan, J\" OR author:\"Bromley, S\" OR author:\"Xing, Z\" OR author:\"Oset, S\") AND (aff:\"Auburn\" OR full:\"Auburn\")",
   "paperLimit": 10,
@@ -230,323 +230,323 @@
   ],
   "wordCloud": [
     {
+      "term": "solar system",
+      "count": 37,
+      "weight": 1
+    },
+    {
       "term": "measurement",
       "count": 46,
-      "weight": 1
+      "weight": 0.9985040429805776
     },
     {
       "term": "observation",
       "count": 62,
-      "weight": 0.769958164829305
+      "weight": 0.8410915505500345
     },
     {
       "term": "solar",
       "count": 45,
-      "weight": 0.7080573216980677
+      "weight": 0.7987341854489869
     },
     {
       "term": "comet",
       "count": 57,
-      "weight": 0.6810072308484818
+      "weight": 0.7802244121377697
     },
     {
       "term": "system",
       "count": 48,
-      "weight": 0.6593355079293082
+      "weight": 0.7653949359364522
     },
     {
       "term": "emission",
       "count": 33,
-      "weight": 0.614732570866751
-    },
-    {
-      "term": "study",
-      "count": 28,
-      "weight": 0.49856641435197124
+      "weight": 0.7348741418055498
     },
     {
       "term": "coma",
       "count": 35,
-      "weight": 0.4907581481712841
+      "weight": 0.6500412119184682
     },
     {
       "term": "model",
       "count": 31,
-      "weight": 0.48981407294945645
-    },
-    {
-      "term": "high",
-      "count": 30,
-      "weight": 0.48094186622341834
+      "weight": 0.6493952023193901
     },
     {
       "term": "object",
       "count": 34,
-      "weight": 0.4566544719090544
+      "weight": 0.6267048275712537
     },
     {
       "term": "astrophysics",
       "count": 39,
-      "weight": 0.42465767314609354
+      "weight": 0.6048101324635622
     },
     {
       "term": "modeling",
       "count": 24,
-      "weight": 0.42289554425103626
+      "weight": 0.6036043469978489
     },
     {
       "term": "rate",
       "count": 33,
-      "weight": 0.4184876870971859
+      "weight": 0.6005881487469936
     },
     {
       "term": "atomic",
       "count": 28,
-      "weight": 0.4181443870165211
+      "weight": 0.6003532361655105
     },
     {
       "term": "telescope",
       "count": 28,
-      "weight": 0.4174266435989291
+      "weight": 0.5998621003675155
     },
     {
       "term": "spectral",
       "count": 30,
-      "weight": 0.40973389717112396
+      "weight": 0.5945981257172593
     },
     {
       "term": "state",
       "count": 30,
-      "weight": 0.4084352958111415
+      "weight": 0.5937095217961645
     },
     {
       "term": "activity",
       "count": 32,
-      "weight": 0.4055125374239637
+      "weight": 0.5917095434784966
     },
     {
       "term": "plasma",
       "count": 23,
-      "weight": 0.39158172434053695
+      "weight": 0.582176999072306
     },
     {
       "term": "energy",
       "count": 21,
-      "weight": 0.3886940926493766
+      "weight": 0.5802010571685662
     },
     {
       "term": "spectroscopy",
       "count": 25,
-      "weight": 0.38820485382134085
+      "weight": 0.5798662819601448
     },
     {
       "term": "ultraviolet",
       "count": 14,
-      "weight": 0.38097491066683686
-    },
-    {
-      "term": "result",
-      "count": 33,
-      "weight": 0.37514098208085844
-    },
-    {
-      "term": "large",
-      "count": 25,
-      "weight": 0.37067083841448223
+      "weight": 0.5749189932583435
     },
     {
       "term": "observatory",
       "count": 15,
-      "weight": 0.36830250241496043
+      "weight": 0.5662475471861754
     },
     {
       "term": "evolution",
       "count": 27,
-      "weight": 0.36309976796463417
+      "weight": 0.5626874321459159
     },
     {
       "term": "process",
       "count": 34,
-      "weight": 0.35790210334672307
+      "weight": 0.5591307862788009
+    },
+    {
+      "term": "neutron star",
+      "count": 9,
+      "weight": 0.5575295150746415
     },
     {
       "term": "mechanism",
       "count": 21,
-      "weight": 0.3540193359786993
+      "weight": 0.5564738952464584
     },
     {
       "term": "optical",
       "count": 13,
-      "weight": 0.3484139119822772
+      "weight": 0.5526382287393118
     },
     {
       "term": "space",
       "count": 28,
-      "weight": 0.3386686076882197
+      "weight": 0.5459697345617923
     },
     {
       "term": "distance",
       "count": 20,
-      "weight": 0.3360395374502183
+      "weight": 0.5441707204884101
     },
     {
       "term": "water",
       "count": 21,
-      "weight": 0.33103669924939305
+      "weight": 0.5407473899892672
     },
     {
       "term": "electron",
       "count": 21,
-      "weight": 0.3292973846002031
+      "weight": 0.5395572158027033
     },
     {
       "term": "production",
       "count": 25,
-      "weight": 0.31708741749074054
+      "weight": 0.5312022078809082
     },
     {
       "term": "ionization",
       "count": 17,
-      "weight": 0.31260858268308206
+      "weight": 0.5281374412060333
     },
     {
       "term": "planetary",
       "count": 35,
-      "weight": 0.3123670413816016
+      "weight": 0.5279721598855173
     },
     {
       "term": "method",
       "count": 20,
-      "weight": 0.3095808063387391
+      "weight": 0.526065601444663
     },
     {
       "term": "heliocentric",
       "count": 15,
-      "weight": 0.30449612655750224
+      "weight": 0.5225862685790483
     },
     {
       "term": "source",
       "count": 30,
-      "weight": 0.3019507085543463
-    },
-    {
-      "term": "used",
-      "count": 19,
-      "weight": 0.2977394884720159
+      "weight": 0.5208444958625464
     },
     {
       "term": "require",
       "count": 17,
-      "weight": 0.28941047807614345
+      "weight": 0.512263496090211
     },
     {
       "term": "earth",
       "count": 39,
-      "weight": 0.28840339208001636
+      "weight": 0.5115743696249111
     },
     {
       "term": "experimental",
       "count": 15,
-      "weight": 0.278682350555373
+      "weight": 0.5049224779188679
     },
     {
       "term": "condition",
       "count": 23,
-      "weight": 0.2765160835906726
+      "weight": 0.5034401497939405
     },
     {
       "term": "calculation",
       "count": 18,
-      "weight": 0.2645480199135775
+      "weight": 0.4952506709907433
     },
     {
       "term": "structure",
       "count": 16,
-      "weight": 0.2579336992665945
-    },
-    {
-      "term": "subsequent",
-      "count": 7,
-      "weight": 0.2569465304692402
-    },
-    {
-      "term": "low",
-      "count": 26,
-      "weight": 0.24179533629737465
+      "weight": 0.4907246390278882
     },
     {
       "term": "nucleu",
       "count": 27,
-      "weight": 0.2411358959525535
+      "weight": 0.47923027720861655
     },
     {
       "term": "property",
       "count": 24,
-      "weight": 0.2375203811789714
+      "weight": 0.47675626116059333
     },
     {
       "term": "physics",
       "count": 16,
-      "weight": 0.23456394461932348
+      "weight": 0.4747332376213243
     },
     {
       "term": "cometary",
       "count": 33,
-      "weight": 0.23294811660252407
-    },
-    {
-      "term": "like",
-      "count": 18,
-      "weight": 0.2305113378654013
+      "weight": 0.4736275625806311
     },
     {
       "term": "across",
       "count": 15,
-      "weight": 0.22512101961572478
+      "weight": 0.468271654842052
     },
     {
       "term": "formation",
       "count": 24,
-      "weight": 0.22044590986743287
+      "weight": 0.46507258160687764
     },
     {
       "term": "star",
       "count": 19,
-      "weight": 0.21850669896874178
-    },
-    {
-      "term": "over",
-      "count": 23,
-      "weight": 0.21276909719864584
+      "weight": 0.46374562287919696
     },
     {
       "term": "active",
       "count": 22,
-      "weight": 0.21194633582388844
+      "weight": 0.45925651283052005
     },
     {
       "term": "neutral",
       "count": 12,
-      "weight": 0.21065208003454733
+      "weight": 0.45837088248640606
     },
     {
       "term": "spectra",
       "count": 19,
-      "weight": 0.20886351558475547
+      "weight": 0.45714700776072625
     },
     {
-      "term": "atlas",
-      "count": 22,
-      "weight": 0.2083974531334733
+      "term": "atomic data",
+      "count": 9,
+      "weight": 0.4248630807186764
     },
     {
-      "term": "allow",
+      "term": "dielectronic recombination",
+      "count": 5,
+      "weight": 0.3361593465564585
+    },
+    {
+      "term": "electron impact",
+      "count": 8,
+      "weight": 0.33495281769650004
+    },
+    {
+      "term": "highly charged",
+      "count": 3,
+      "weight": 0.32741792230600897
+    },
+    {
+      "term": "charge exchange",
+      "count": 4,
+      "weight": 0.32045038540345405
+    },
+    {
+      "term": "small bodies",
       "count": 11,
-      "weight": 0.20004417996818677
+      "weight": 0.286189872182652
     },
     {
-      "term": "range",
-      "count": 20,
+      "term": "synthetic spectra",
+      "count": 4,
+      "weight": 0.25852891571303127
+    },
+    {
+      "term": "solar wind",
+      "count": 3,
+      "weight": 0.23749829251634308
+    },
+    {
+      "term": "fusion energy",
+      "count": 1,
+      "weight": 0.23448085527507911
+    },
+    {
+      "term": "molecular data",
+      "count": 1,
       "weight": 0.2
     }
   ]

@@ -90,16 +90,11 @@ button:focus-visible {
 }
 
 .brand-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  color: var(--white);
-  background: var(--navy);
-  border-bottom: 4px solid var(--orange);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0;
+  display: block;
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .brand strong,
@@ -470,6 +465,15 @@ nav a {
 .student-card .person-photo {
   aspect-ratio: 4 / 1;
   font-size: 1.25rem;
+}
+
+.student-card .person-photo .student-fallback-logo {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  max-width: calc(100% - 24px);
+  max-height: calc(100% - 12px);
+  padding: 0;
 }
 
 .person-body {

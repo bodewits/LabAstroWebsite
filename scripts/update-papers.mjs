@@ -161,8 +161,11 @@ const stopWords = new Set(
     "have",
     "having",
     "here",
+    "high",
     "into",
     "its",
+    "large",
+    "like",
     "main",
     "may",
     "more",
@@ -173,18 +176,22 @@ const stopWords = new Set(
     "observed",
     "observations",
     "only",
+    "over",
     "our",
     "paper",
     "papers",
     "present",
     "provide",
     "ratio",
+    "result",
     "results",
     "show",
     "shown",
     "shows",
     "small",
+    "study",
     "such",
+    "subsequent",
     "than",
     "that",
     "the",
@@ -195,6 +202,7 @@ const stopWords = new Set(
     "toward",
     "under",
     "using",
+    "used",
     "was",
     "were",
     "when",
@@ -206,6 +214,7 @@ const stopWords = new Set(
     "within",
     "without",
     "would",
+    "low",
     "auburn",
     "university",
     "fogle",
@@ -233,13 +242,14 @@ const stopWords = new Set(
 const singularize = (term) => {
   const exceptions = new Set(["atlas", "astrophysics", "physics", "gas"]);
   if (exceptions.has(term)) return term;
+  if (term === "nucleu") return "nucleus";
   if (term.endsWith("ies") && term.length > 5) return `${term.slice(0, -3)}y`;
   if (term.endsWith("ses") || term.endsWith("xes")) return term.slice(0, -2);
   if (term.endsWith("s") && !term.endsWith("ss") && term.length > 4) return term.slice(0, -1);
   return term;
 };
 
-const tokenize = (text) =>
+const tokenizeNormalized = (text) =>
   text
     .toLowerCase()
     .replace(/<[^>]+>/g, " ")
@@ -248,7 +258,46 @@ const tokenize = (text) =>
     .replace(/[^a-z0-9+]+/g, " ")
     .split(/\s+/)
     .map((term) => singularize(term.trim()))
+    .filter((term) => term.length > 0);
+
+const tokenize = (text) =>
+  tokenizeNormalized(text)
     .filter((term) => term.length > 2 && !/^\d+$/.test(term) && !stopWords.has(term));
+
+const preferredPhrasePatterns = [
+  { tokens: ["atomic", "data"], label: "atomic data" },
+  { tokens: ["charge", "exchange"], label: "charge exchange" },
+  { tokens: ["dielectronic", "recombination"], label: "dielectronic recombination" },
+  { tokens: ["electron", "impact"], label: "electron impact" },
+  { tokens: ["fusion", "energy"], label: "fusion energy" },
+  { tokens: ["highly", "charged"], label: "highly charged" },
+  { tokens: ["laboratory", "astrophysics"], label: "laboratory astrophysics" },
+  { tokens: ["molecular", "data"], label: "molecular data" },
+  { tokens: ["neutron", "star"], label: "neutron star" },
+  { tokens: ["small", "body"], label: "small bodies" },
+  { tokens: ["solar", "wind"], label: "solar wind" },
+  { tokens: ["solar", "system"], label: "solar system" },
+  { tokens: ["synthetic", "spectra"], label: "synthetic spectra" },
+  { tokens: ["xray", "spectroscopy"], label: "x-ray spectroscopy" }
+];
+const preferredPhraseLabels = new Set(preferredPhrasePatterns.map((pattern) => pattern.label));
+const reservedPhraseSlots = 16;
+const wordCloudLimit = 64;
+
+const extractPreferredPhrases = (text) => {
+  const tokens = tokenizeNormalized(text);
+  const phrases = new Set();
+
+  for (let index = 0; index < tokens.length - 1; index += 1) {
+    for (const pattern of preferredPhrasePatterns) {
+      if (tokens[index] === pattern.tokens[0] && tokens[index + 1] === pattern.tokens[1]) {
+        phrases.add(pattern.label);
+      }
+    }
+  }
+
+  return phrases;
+};
 
 const buildWordCloud = (papers) => {
   const scoredTerms = new Map();
@@ -265,7 +314,9 @@ const buildWordCloud = (papers) => {
 
   for (const paper of candidatePapers) {
     const text = [paper.title, paper.abstract, ...(paper.keywords || [])].filter(Boolean).join(" ");
-    const uniqueTerms = new Set(tokenize(text));
+    const singleTerms = new Set(tokenize(text));
+    const phraseTerms = extractPreferredPhrases(text);
+    const uniqueTerms = new Set([...singleTerms, ...phraseTerms]);
     const matchingMembers = matchingMembersForPaper(paper);
     const paperWeight =
       matchingMembers.reduce((sum, member) => sum + 1 / Math.max(1, paperCountsByMember.get(member.name) || 1), 0) ||
@@ -273,15 +324,24 @@ const buildWordCloud = (papers) => {
 
     for (const term of uniqueTerms) {
       const entry = scoredTerms.get(term) || { score: 0, papers: 0 };
-      entry.score += paperWeight;
+      const termWeight = preferredPhraseLabels.has(term) ? paperWeight * 1.8 : paperWeight;
+      entry.score += termWeight;
       entry.papers += 1;
       scoredTerms.set(term, entry);
     }
   }
 
-  const terms = [...scoredTerms.entries()]
+  const sortedTerms = [...scoredTerms.entries()].sort(
+    (a, b) => b[1].score - a[1].score || b[1].papers - a[1].papers || a[0].localeCompare(b[0])
+  );
+  const phraseTerms = sortedTerms.filter(([term]) => preferredPhraseLabels.has(term)).slice(0, reservedPhraseSlots);
+  const phraseTermSet = new Set(phraseTerms.map(([term]) => term));
+  const singleTerms = sortedTerms
+    .filter(([term]) => !phraseTermSet.has(term))
+    .slice(0, Math.max(0, wordCloudLimit - phraseTerms.length));
+  const terms = [...phraseTerms, ...singleTerms]
     .sort((a, b) => b[1].score - a[1].score || b[1].papers - a[1].papers || a[0].localeCompare(b[0]))
-    .slice(0, 64);
+    .slice(0, wordCloudLimit);
 
   if (!terms.length) return [];
 

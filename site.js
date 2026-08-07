@@ -89,12 +89,12 @@ const facilities = [
 
 const faculty = [
   {
-    name: "Michael Fogle Jr.",
+    name: "Dr. Michael Fogle Jr.",
     role: "Andrew T Hunt Endowed Professor",
     summary: "Leads experimental AMO measurements, including charge exchange and recombination studies that support laboratory and low-density astrophysics.",
     photo: "assets/people/mike-fogle.jpg",
     urls: {
-      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/fogle/index.htm",
+      auburn: "mailto:mrf0006@auburn.edu",
       scholar: "https://scholar.google.com/citations?user=D0GGP3QAAAAJ&hl=en",
       orcid: "https://orcid.org/0000-0003-3511-262X"
     },
@@ -106,64 +106,65 @@ const faculty = [
     summary: "Develops atomic data, theory, and spectral diagnostics for astrophysical plasmas, laboratory plasmas, and neutron-star merger problems.",
     photo: "assets/people/stuart-loch.jpg",
     urls: {
-      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/loch/index.htm",
+      auburn: "mailto:lochstu@auburn.edu",
       scholar: "https://scholar.google.com/citations?user=-Bj_9ZsAAAAJ&hl=en",
       orcid: "https://orcid.org/0000-0002-3822-6756"
     },
     links: ["auburn", "scholar", "orcid"]
   },
   {
-    name: "Amy Gall",
+    name: "Dr. Amy Gall",
     role: "Assistant Professor",
     summary: "Leads Auburn's EBIT program, applying spectroscopy of highly charged ions to heliophysics and astrophysics.",
     photo: "assets/people/amy-gall.jpg",
     urls: {
-      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/gall/index.htm",
+      auburn: "mailto:amg0272@auburn.edu",
       scholar: "https://scholar.google.com/citations?user=KJmLiO0AAAAJ&hl=en",
       orcid: "https://orcid.org/0000-0002-8260-2229"
     },
     links: ["auburn", "scholar", "orcid"]
   },
   {
-    name: "Dennis Bodewits",
+    name: "Dr. Dennis Bodewits",
     role: "Auburn University Endowed Alumni Professor",
     summary: "Studies comets and small bodies with observations and laboratory-informed models of gas, dust, chemistry, and volatile activity.",
     photo: "assets/people/dennis-bodewits.jpg",
     urls: {
-      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/bodewits/index.htm",
+      auburn: "mailto:dennis@auburn.edu",
       scholar: "https://scholar.google.com/citations?user=u1nZPlsAAAAJ&hl=nl",
       orcid: "https://orcid.org/0000-0002-2668-7248"
     },
     links: ["auburn", "scholar", "orcid"]
   },
   {
-    name: "John Noonan",
+    name: "Dr. John Noonan",
     role: "Assistant Research Professor",
     summary: "Works on cometary activity, small-body observations, and JWST and HST spectroscopy, connecting telescope data with physical models.",
     photo: "assets/people/john-noonan-20260703.jpg",
     urls: {
-      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/noonan/index.htm",
+      auburn: "mailto:noonan@auburn.edu",
       orcid: "https://orcid.org/0000-0003-2152-6987"
     },
     links: ["auburn", "scholar", "orcid"]
   },
   {
-    name: "Steven Bromley",
+    name: "Dr. Steven Bromley",
     role: "Principal Research Scientist",
     summary: "Develops spectroscopic calculations and atomic-data projects for neutron-star mergers and cometary comae.",
     photo: "assets/people/steve-bromley.jpg",
     urls: {
-      auburn: "https://www.auburn.edu/cosam/departments/physics/physics-faculty/bromley/index.htm",
+      auburn: "mailto:sjb0068@auburn.edu",
       orcid: "https://orcid.org/0000-0003-2110-8152"
     },
     links: ["auburn", "orcid"]
   },
   {
-    name: "Zexi Xing",
+    name: "Dr. Zexi Xing",
     role: "Postdoctoral researcher",
     summary: "Studies volatile activity in comets and interstellar objects through UV/optical observations and production-rate modeling.",
     photo: "assets/people/zexi-xing-20260703.jpg",
     urls: {
+      auburn: "mailto:zzx0030@auburn.edu",
       scholar: "https://scholar.google.com/citations?user=4dI-4XYAAAAJ&hl=en",
       orcid: "https://orcid.org/0000-0003-2399-5613"
     },
@@ -175,11 +176,11 @@ const students = [
   {
     name: "Shawn Oset",
     role: "Graduate student",
-    summary: "Works on comet and small-body projects connected to observation-driven laboratory astrophysics questions.",
+    summary: "Works with Dr. Dennis Bodewits on comet and small-body projects connected to observation-driven laboratory astrophysics questions.",
     links: []
   },
   {
-    name: "Patrikc Flint",
+    name: "Patrick Flint",
     role: "Graduate student",
     summary: "Works in physics education research and on atomic data for neutron star mergers with Dr. Stuart Loch.",
     links: []
@@ -187,37 +188,37 @@ const students = [
   {
     name: "Jacob Freeze",
     role: "Graduate student",
-    summary: "Works with Dr. Gall on EUV/X-ray spectroscopy using the EBIT.",
+    summary: "Works with Dr. Amy Gall on EUV/X-ray spectroscopy using the EBIT.",
     links: []
   },
   {
     name: "Karin Farajnejadi",
     role: "Graduate student",
-    summary: "Works with Dr. Gall on EUV/X-ray spectroscopy using the EBIT.",
+    summary: "Works with Dr. Amy Gall on EUV/X-ray spectroscopy using the EBIT.",
     links: []
   },
   {
     name: "Winston Solsrud",
     role: "Graduate student",
-    summary: "Works with Dr. Loch and Dr. David Ennis on atomic spectroscopy for fusion energy applications.",
+    summary: "Works with Dr. Stuart Loch and Dr. David Ennis on atomic spectroscopy for fusion energy applications.",
     links: []
   },
   {
     name: "Borna Hlousek",
     role: "Graduate student",
-    summary: "Works with Dr. Gall on EUV/X-ray spectroscopy using the EBIT.",
+    summary: "Works with Dr. Amy Gall on EUV/X-ray spectroscopy using the EBIT.",
     links: []
   },
   {
     name: "Clayton Chilen",
     role: "Graduate student",
-    summary: "Works on laboratory astrophysics projects connected to atomic, molecular, optical, and observational research.",
+    summary: "Works with Dr. Stuart Loch on laboratory astrophysics projects connected to atomic, molecular, optical, and observational research.",
     links: []
   },
   {
     name: "Brandon Martin",
     role: "Graduate student",
-    summary: "Works on laboratory astrophysics projects connected to atomic, molecular, optical, and observational research.",
+    summary: "Works with Dr. Stuart Loch on laboratory astrophysics projects connected to atomic, molecular, optical, and observational research.",
     links: []
   }
 ];
@@ -253,9 +254,10 @@ const initials = (name) =>
     .toUpperCase();
 
 const personTemplate = (person, className = "person-card") => {
-  const linkLabels = { auburn: "Auburn", scholar: "Google Scholar", orcid: "ORCID" };
+  const isStudentCard = className.includes("student-card");
+  const linkLabels = { auburn: "Email", scholar: "Google Scholar", orcid: "ORCID" };
   const linkContent = {
-    auburn: "Auburn",
+    auburn: `<svg class="profile-icon envelope-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.8.14 7.2 5.27 7.2-5.27a.7.7 0 0 0-.45-.14H5.25a.7.7 0 0 0-.45.14Zm14.4 10.36a.7.7 0 0 0 .05-.25V8.43l-6.74 4.93a.9.9 0 0 1-1.02 0L4.75 8.43V17a.75.75 0 0 0 .75.75h13.5a.7.7 0 0 0 .2-.03Z"/></svg>`,
     scholar: `<svg class="profile-icon google-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#4285f4" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.2 3-7.3Z"/><path fill="#34a853" d="M12 22c2.7 0 5-0.9 6.6-2.5L15.4 17c-.9.6-2 .9-3.4.9a5.9 5.9 0 0 1-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22Z"/><path fill="#fbbc05" d="M6.4 13.8a6 6 0 0 1 0-3.6V7.6H3.1a10 10 0 0 0 0 8.8l3.3-2.6Z"/><path fill="#ea4335" d="M12 6.1c1.5 0 2.8.5 3.8 1.5l2.8-2.8A9.5 9.5 0 0 0 12 2a10 10 0 0 0-8.9 5.6l3.3 2.6A5.9 5.9 0 0 1 12 6.1Z"/></svg>`,
     orcid: `<svg class="profile-icon orcid-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="11" fill="#a6ce39"/><path fill="#fff" d="M7.4 8.8h1.7v8H7.4v-8Zm.8-3.6a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm3.4 3.6h3.1c2.9 0 4.5 1.7 4.5 4s-1.6 4-4.5 4h-3.1v-8Zm1.7 1.5v5h1.3c2 0 2.9-1 2.9-2.5s-.9-2.5-2.9-2.5h-1.3Z"/></svg>`
   };
@@ -268,6 +270,8 @@ const personTemplate = (person, className = "person-card") => {
 
   const photo = person.photo
     ? `<img src="${person.photo}" alt="${person.name}">`
+    : isStudentCard
+      ? `<img src="assets/logo/aubie-atom-logo.png" alt="" aria-hidden="true" class="student-fallback-logo">`
     : `<span>${initials(person.name)}</span>`;
 
   return `
@@ -336,6 +340,15 @@ const formatAuthors = (authors = []) => {
   return `${authors.slice(0, 5).join(", ")} et al.`;
 };
 
+const formatPubMetaDate = (paper) => {
+  if (paper.pubdate) {
+    const normalized = String(paper.pubdate).replace(/-00$/u, "");
+    if (normalized) return normalized;
+  }
+
+  return paper.year || "In press";
+};
+
 const renderPapers = (papers = [], updated) => {
   const target = document.getElementById("paper-list");
   if (!papers.length) {
@@ -351,16 +364,15 @@ const renderPapers = (papers = [], updated) => {
     .map((paper) => {
       const title = escapeHtml(paper.title);
       const url = escapeHtml(paper.url);
-      const year = escapeHtml(paper.year || "In press");
+      const date = escapeHtml(formatPubMetaDate(paper));
       const venue = escapeHtml(paper.venue || "NASA ADS");
       const authors = escapeHtml(formatAuthors(paper.authors));
-      const date = paper.pubdate ? ` / ${escapeHtml(paper.pubdate)}` : "";
 
       return `
         <li class="paper-card">
           <a class="paper-title" href="${url}" rel="noreferrer">${title}</a>
           <p class="paper-authors">${authors}</p>
-          <p class="paper-meta">${year}${date} / ${venue}</p>
+          <p class="paper-meta">${date} / ${venue}</p>
         </li>
       `;
     })
