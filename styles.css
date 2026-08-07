@@ -436,7 +436,7 @@ nav a {
 }
 
 .people-grid.compact {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .person-card {
@@ -463,8 +463,26 @@ nav a {
 }
 
 .student-card .person-photo {
-  aspect-ratio: 4 / 1;
+  aspect-ratio: 4 / 1.6;
   font-size: 1.25rem;
+}
+
+.student-card .person-photo.theme-theory {
+  background:
+    linear-gradient(135deg, rgba(18, 40, 76, 0.98), rgba(14, 111, 116, 0.92)),
+    var(--navy);
+}
+
+.student-card .person-photo.theme-ebit {
+  background:
+    linear-gradient(135deg, rgba(166, 64, 0, 0.96), rgba(18, 40, 76, 0.96)),
+    var(--navy);
+}
+
+.student-card .person-photo.theme-astronomy {
+  background:
+    linear-gradient(135deg, rgba(21, 41, 88, 0.98), rgba(91, 43, 116, 0.92)),
+    var(--navy);
 }
 
 .student-card .person-photo .student-fallback-logo {
@@ -596,8 +614,7 @@ nav a {
 
   .collaboration-grid,
   .facility-list,
-  .people-grid,
-  .people-grid.compact {
+  .people-grid {
     grid-template-columns: 1fr;
   }
 

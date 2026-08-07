@@ -181,50 +181,72 @@ const students = [
   {
     name: "Shawn Oset",
     role: "Graduate student",
-    summary: "Works with Dr. Dennis Bodewits on comet and small-body projects connected to observation-driven laboratory astrophysics questions.",
-    links: []
+    summary: "Works with Dr. Dennis Bodewits to characterize the storage and release of cometary volatiles using observations from the Neil Gehrels Swift Observatory.",
+    links: [],
+    theme: "astronomy"
   },
   {
     name: "Patrick Flint",
     role: "Graduate student",
     summary: "Works in physics education research and on atomic data for neutron star mergers with Dr. Stuart Loch.",
-    links: []
+    links: [],
+    theme: "astronomy"
   },
   {
     name: "Jacob Freeze",
     role: "Graduate student",
     summary: "Works with Dr. Amy Gall on EUV/X-ray spectroscopy using the EBIT.",
-    links: []
+    links: [],
+    theme: "ebit"
   },
   {
     name: "Karin Farajnejadi",
     role: "Graduate student",
     summary: "Works with Dr. Amy Gall on EUV/X-ray spectroscopy using the EBIT.",
-    links: []
+    links: [],
+    theme: "ebit"
   },
   {
     name: "Winston Solsrud",
     role: "Graduate student",
     summary: "Works with Dr. Stuart Loch and Dr. David Ennis on atomic spectroscopy for fusion energy applications.",
-    links: []
+    links: [],
+    theme: "theory"
+  },
+  {
+    name: "Zareen Anjum",
+    role: "Graduate student",
+    summary: "Works with Dr. Dennis Bodewits on comet spectroscopy using ground-based observations to characterize chemical composition and emission processes.",
+    links: [],
+    theme: "astronomy"
+  },
+  {
+    name: "Jannatul Aynan",
+    role: "Graduate student",
+    summary: "Works with Dr. Dennis Bodewits on comet spectroscopy using ground-based observations to characterize chemical composition and emission processes.",
+    links: [],
+    theme: "astronomy"
   },
   {
     name: "Borna Hlousek",
     role: "Graduate student",
     summary: "Works with Dr. Amy Gall on EUV/X-ray spectroscopy using the EBIT.",
-    links: []
+    links: [],
+    theme: "ebit"
   },
   {
     name: "Clayton Chilen",
     role: "Graduate student",
     summary: "Works with Dr. Stuart Loch on laboratory astrophysics projects connected to atomic, molecular, optical, and observational research.",
-    links: []
+    links: [],
+    theme: "theory"
   },
   {
     name: "Brandon Martin",
     role: "Graduate student",
     summary: "Works with Dr. Stuart Loch on laboratory astrophysics projects connected to atomic, molecular, optical, and observational research.",
-    links: []
+    links: [],
+    theme: "theory"
   }
 ];
 
@@ -260,6 +282,12 @@ const initials = (name) =>
 
 const personTemplate = (person, className = "person-card") => {
   const isStudentCard = className.includes("student-card");
+  const studentTheme = person.theme || "theory";
+  const fallbackLogos = {
+    theory: "assets/logo/aubie-atom-logo.png",
+    ebit: "assets/logo/aubie-lab-logo.png",
+    astronomy: "assets/logo/aubie-astronomy-logo.png"
+  };
   const linkLabels = { auburn: "Email", scholar: "Google Scholar", orcid: "ORCID" };
   const linkContent = {
     auburn: `<svg class="profile-icon envelope-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.8.14 7.2 5.27 7.2-5.27a.7.7 0 0 0-.45-.14H5.25a.7.7 0 0 0-.45.14Zm14.4 10.36a.7.7 0 0 0 .05-.25V8.43l-6.74 4.93a.9.9 0 0 1-1.02 0L4.75 8.43V17a.75.75 0 0 0 .75.75h13.5a.7.7 0 0 0 .2-.03Z"/></svg>`,
@@ -276,12 +304,12 @@ const personTemplate = (person, className = "person-card") => {
   const photo = person.photo
     ? `<img src="${person.photo}" alt="${person.name}">`
     : isStudentCard
-      ? `<img src="assets/logo/aubie-atom-logo.png" alt="" aria-hidden="true" class="student-fallback-logo">`
-    : `<span>${initials(person.name)}</span>`;
+      ? `<img src="${fallbackLogos[studentTheme] || fallbackLogos.theory}" alt="" aria-hidden="true" class="student-fallback-logo">`
+      : `<span>${initials(person.name)}</span>`;
 
   return `
     <article class="${className}">
-      <div class="person-photo">${photo}</div>
+      <div class="person-photo${isStudentCard ? ` theme-${studentTheme}` : ""}">${photo}</div>
       <div class="person-body">
         <h4>${person.name}</h4>
         <p class="role">${person.role}</p>
