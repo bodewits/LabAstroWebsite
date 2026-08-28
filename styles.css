@@ -357,6 +357,7 @@ nav a {
 
 .paper-list {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin: 0;
   padding: 0;
@@ -619,7 +620,8 @@ nav a {
 
   .collaboration-grid,
   .facility-list,
-  .people-grid {
+  .people-grid,
+  .paper-list {
     grid-template-columns: 1fr;
   }
 

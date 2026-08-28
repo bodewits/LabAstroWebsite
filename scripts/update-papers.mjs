@@ -20,7 +20,7 @@ const groupMembers = [
   { name: "Shawn Oset", adsAuthor: "Oset, S" }
 ];
 
-const paperLimit = 10;
+const paperLimit = 20;
 const wordCloudPaperLimit = 100;
 const principalInvestigators = groupMembers.filter((member) => member.pi);
 
@@ -240,8 +240,9 @@ const stopWords = new Set(
 );
 
 const singularize = (term) => {
-  const exceptions = new Set(["atlas", "astrophysics", "physics", "gas"]);
+  const exceptions = new Set(["atlas", "astrophysics", "physics", "gas", "nucleus"]);
   if (exceptions.has(term)) return term;
+  if (term === "nuclei" || term === "nucleu") return "nucleus";
   if (term === "nucleu") return "nucleus";
   if (term.endsWith("ies") && term.length > 5) return `${term.slice(0, -3)}y`;
   if (term.endsWith("ses") || term.endsWith("xes")) return term.slice(0, -2);
@@ -336,8 +337,13 @@ const buildWordCloud = (papers) => {
   );
   const phraseTerms = sortedTerms.filter(([term]) => preferredPhraseLabels.has(term)).slice(0, reservedPhraseSlots);
   const phraseTermSet = new Set(phraseTerms.map(([term]) => term));
+  const phraseComponentTerms = new Set(
+    phraseTerms.flatMap(([term]) =>
+      preferredPhrasePatterns.find((pattern) => pattern.label === term)?.tokens || []
+    )
+  );
   const singleTerms = sortedTerms
-    .filter(([term]) => !phraseTermSet.has(term))
+    .filter(([term]) => !phraseTermSet.has(term) && !phraseComponentTerms.has(term))
     .slice(0, Math.max(0, wordCloudLimit - phraseTerms.length));
   const terms = [...phraseTerms, ...singleTerms]
     .sort((a, b) => b[1].score - a[1].score || b[1].papers - a[1].papers || a[0].localeCompare(b[0]))

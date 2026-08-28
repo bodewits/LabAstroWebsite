@@ -34,7 +34,7 @@ The public page never calls NASA ADS directly, because ADS requires a private AP
 ADS_API_TOKEN=your-token node scripts/update-papers.mjs
 ```
 
-The script searches NASA ADS for the group roster and writes 10 recent matching papers to `data/papers.json` and `data/papers.js`.
+The script searches NASA ADS for the group roster and writes 20 recent matching papers to `data/papers.json` and `data/papers.js`.
 It also ensures that each PI listed in `principalInvestigators` has at least one paper represented when ADS returns one.
 The same run builds the research-term word cloud from titles, abstracts, and keywords in the latest 100 matching ADS records.
 
