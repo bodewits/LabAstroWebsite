@@ -1,5 +1,5 @@
 window.LAB_ASTRO_PAPERS = {
-  "updated": "2026-10-19T16:26:24.391Z",
+  "updated": "2026-10-26T16:05:46.439Z",
   "source": "NASA ADS",
   "query": "(author:\"Fogle, M\" OR author:\"Loch, S\" OR author:\"Gall, A\" OR author:\"Bodewits, D\" OR author:\"Noonan, J\" OR author:\"Bromley, S\" OR author:\"Xing, Z\" OR author:\"Oset, S\") AND (aff:\"Auburn\" OR full:\"Auburn\")",
   "note": "Set ADS_API_TOKEN to refresh recent papers.",
